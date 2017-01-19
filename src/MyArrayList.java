@@ -105,18 +105,20 @@ public class MyArrayList
     }
 
     int remove() {
-        if(this.size() == 0 && fifoQueue.size() == 0) {return 0;}
+        int connectionNumber;
+        if(this.size() == 0 && fifoQueue.size() == 0) {return -1;}
             totalTime = asArray[this.size() - 1].getTime();
         if (asArray[this.size() - 1] instanceof PackageReceived) {
             totalPackage++;
             fifoQueue.add(asArray[this.size()-1 ]);
+            connectionNumber = asArray[this.size() - 1].getConnectionNumber();
             asArray[this.size() - 1] = null;
             if (!isWorking && fifoQueue.size() >= 0) {
                 this.add(new EndOfService(processingTime + fifoQueue.poll().getTime()));
                 isWorking = true;
                 totalWorkingTime += processingTime;
             }
-            return 1;
+            return connectionNumber;
         } else {
             if (fifoQueue.size() > 0) {
                     fifoQueue.poll();
@@ -128,7 +130,7 @@ public class MyArrayList
                 isWorking = false;
                 asArray[this.size() - 1] = null;
             }
-            return 2;
+            return -2;
         }
     }
     int getTotalPackage() {

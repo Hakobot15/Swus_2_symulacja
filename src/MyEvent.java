@@ -11,5 +11,9 @@ public abstract class MyEvent {
     public int getTime() {
         return time;
     }
+    public int getConnectionNumber()
+    {
+        return 0;
+    }
 }
 

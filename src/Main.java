@@ -46,21 +46,19 @@ public class Main {
                 myArrayList.add(connection.newPackage());
             }
 
-            int iteratorConnection = 0;
             int check;
            loop: while (true)
            {
                check = myArrayList.remove();
                switch (check) {
-                   case 0:
+                   case -1:
                        break loop;
-                   case 1:
-                       myArrayList.add(list[iteratorConnection % connectionNumber].newPackage());
-                       iteratorConnection++;
+                   case -2:
                        continue ;
-                   case 2:
+                   default:
+                       myArrayList.add(list[check].newPackage());
                        continue ;
-                   }
+               }
            }
            float packageSent = (float) myArrayList.getPackageSent();
            float totalPackage = (float)connectionNumber*packageInSeries*numberOfSeries;

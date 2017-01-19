@@ -120,3 +120,5 @@ Wynik symulacji:0.2843 ; Zajetosc systemu: 0.50483704 dla danych: simulationsNum
 Wynik symulacji:0.2841 ; Zajetosc systemu: 0.5035627 dla danych: simulationsNumber(1);connectionNumber(10);packageNumber(10000);peakRate(2);tau(7000ns);processingTime(25ns);bufferSize(30)
 Wynik symulacji:0.3241 ; Zajetosc systemu: 0.5718389 dla danych: simulationsNumber(1);connectionNumber(10);packageNumber(10000);peakRate(2);tau(7000ns);processingTime(25ns);bufferSize(30)
 Wynik symulacji:0.3401 ; Zajetosc systemu: 0.6031939 dla danych: simulationsNumber(1);connectionNumber(10);packageNumber(10000);peakRate(2);tau(7000ns);processingTime(25ns);bufferSize(30)
+Wynik symulacji:0.5622 ; Zajetosc systemu: 0.9982953 dla danych: simulationsNumber(1);connectionNumber(10);packageNumber(10000);peakRate(2);tau(7000ns);processingTime(25ns);bufferSize(30)
+Wynik symulacji:0.5652 ; Zajetosc systemu: 0.99909496 dla danych: simulationsNumber(1);connectionNumber(10);packageNumber(10000);peakRate(2);tau(7000ns);processingTime(25ns);bufferSize(30)
