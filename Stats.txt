@@ -1,0 +1,1 @@
+Srednia symulacji: 0.3401 ; Zajetosc systemu: 0.6031939

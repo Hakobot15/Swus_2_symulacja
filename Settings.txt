@@ -1,0 +1,9 @@
+#1@ simulationsNumber
+#10@ Connections
+#20@ Number of series ON/OFF
+#50@ PackageNumber
+#2@ PR
+#5000@ tOFF ns
+#40@ tON ns
+#25@ processingTime ns
+#30@BufferSize
